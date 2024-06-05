@@ -16,7 +16,9 @@ public class FirstSequence {
 
     }
     public static FirstSequence get(int index){
-        return lookUp(index);
+        if(index < 0)  return null;
+        else return lookUp(index);
+
     }
     public int getValue(){
         return value;

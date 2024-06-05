@@ -1,19 +1,18 @@
 package tut12;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class FibonacciNumber {
     private int value;
-    static ArrayList<FibonacciNumber> stateStruc = new ArrayList<>();
+    static Vector<FibonacciNumber> stateStruc = new Vector<>();
 
     private FibonacciNumber(int index){
         if(index > stateStruc.size()) {
             new FibonacciNumber(index-1);
         }
-        if(index == 0){
-            value = 0;
-        }else if(index == 1){
-            value = 1;
+        if(index <= 1){
+            value = index;
         }else{
             value = stateStruc.get(index-1).getValue() + stateStruc.get(index-2).getValue();
         }

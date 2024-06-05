@@ -66,11 +66,11 @@ public class MobilePhone {
 
     private void setColorCode(Color c){
         switch (c){
-            case Red -> this.colorCode = "#FF0000";
-            case Yellow -> this.colorCode = "#FFFF00";
-            case Blue -> this.colorCode = "#0000FF";
-            case Orange -> this.colorCode = "#FFA500";
-            case Purple -> this.colorCode = "#800080";
+            case Red : this.colorCode = "#FF0000";break;
+            case Yellow : this.colorCode = "#FFFF00";break;
+            case Blue : this.colorCode = "#0000FF";break;
+            case Orange : this.colorCode = "#FFA500";break;
+            case Purple : this.colorCode = "#800080";break;
         }
     }
 
